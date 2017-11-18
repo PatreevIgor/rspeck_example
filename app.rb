@@ -8,4 +8,8 @@ class Human
   def calculate_age
     1
   end
+
+  def change_type
+    @type == 'male' ? @type = 'famele' : @type = 'famele'
+  end
 end

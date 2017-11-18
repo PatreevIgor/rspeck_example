@@ -16,5 +16,10 @@ RSpec.describe 'Life of Human' do
       human = Human.new
       expect(human.type).to be_eql('male')
     end
+
+    it 'Human can change type' do
+      human = Human.new
+      expect(human.change_type).to be_eql('famele')
+    end
   end
 end
