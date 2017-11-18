@@ -22,4 +22,12 @@ RSpec.describe 'Life of Human' do
       expect(human.change_type).to be_eql('famele')
     end
   end
+
+  context 'Car' do
+    it 'Car exists' do
+      car = Car.new
+      expect(car).to be_truthy
+    end
+  end
+  
 end

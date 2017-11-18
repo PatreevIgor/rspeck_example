@@ -13,3 +13,12 @@ class Human
     @type == 'male' ? @type = 'famele' : @type = 'famele'
   end
 end
+
+class Car
+  attr_reader :brand, :color
+
+  def initialize
+    @brand
+    @color
+  end
+end
