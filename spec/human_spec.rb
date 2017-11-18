@@ -11,5 +11,10 @@ RSpec.describe 'Life of Human' do
       human = Human.new
       expect(human.calculate_age).to be_kind_of(Integer)
     end
+
+    it 'Human type after creation' do
+      human = Human.new
+      expect(human.type).to be_eql('male')
+    end
   end
 end
