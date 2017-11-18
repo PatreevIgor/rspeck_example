@@ -28,6 +28,11 @@ RSpec.describe 'Life of Human' do
       car = Car.new
       expect(car).to be_truthy
     end
+
+    it 'Car can receive technical inspection' do
+      car = Car.new
+      expect(car.receive_technical_inspection).to be_kind_of(TrueClass)
+      expect(car.receive_technical_inspection).to be_eql(true)
+    end
   end
-  
 end

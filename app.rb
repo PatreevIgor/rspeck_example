@@ -17,8 +17,13 @@ end
 class Car
   attr_reader :brand, :color
 
-  def initialize
+  def initialize(technical_inspection = false)
     @brand
     @color
+    @technical_inspection = technical_inspection
+  end
+
+  def receive_technical_inspection
+    @technical_inspection = true
   end
 end
